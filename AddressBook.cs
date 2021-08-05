@@ -7,6 +7,7 @@ namespace AddressBookProblemUpdated
     class AddressBook
     {
         public static List<Contacts> addressBook = new List<Contacts>();
+
         public static void AddContact()
         {
             Console.WriteLine("How many contacts do you want to add?");
