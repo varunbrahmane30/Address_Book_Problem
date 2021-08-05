@@ -9,8 +9,14 @@ namespace AddressBookProblemUpdated
             Console.WriteLine("Hello World!");
 
             AddressBook.AddContact();
+            Console.WriteLine("\n");
             AddressBook.ContactsDisplay();
+            Console.WriteLine("\n");
             AddressBook.EditContact();
+            Console.WriteLine("\n");
+            AddressBook.ContactsDisplay();
+            Console.WriteLine("\n");
+            AddressBook.DeleteContact();
             AddressBook.ContactsDisplay();
 
         }
