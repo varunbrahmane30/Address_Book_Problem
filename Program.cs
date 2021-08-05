@@ -8,7 +8,7 @@ namespace AddressBookProblemUpdated
         {
             Console.WriteLine("Hello World!");
 
-            AddressBook.AddContact();
+            AddressBook.addAddressBook();
             Console.WriteLine("\n");
             AddressBook.ContactsDisplay();
             Console.WriteLine("\n");
@@ -16,9 +16,10 @@ namespace AddressBookProblemUpdated
             Console.WriteLine("\n");
             AddressBook.ContactsDisplay();
             Console.WriteLine("\n");
-            AddressBook.DeleteContact();
             AddressBook.ContactsDisplay();
-
+            AddressBook.ContactsDisplay();
+            AddressBook.ContactsDisplay();
+            AddressBook.ContactsDisplay();
         }
     }
 }
