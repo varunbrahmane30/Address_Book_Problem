@@ -8,8 +8,8 @@ namespace AddressBookProblemUpdated
         {
             Console.WriteLine("Welcome to Address Book.");
             AddressBook.addAddressBook();
-            AddressBook.PersonSearch();
             AddressBook.AddressBookSorting();
+            //AddressBook.PersonSearch();
             //Console.WriteLine("\n");
             //AddressBook.ContactsDisplay();
             //Console.WriteLine("\n");
