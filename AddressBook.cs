@@ -222,5 +222,13 @@ namespace AddressBookProblemUpdated
 		{
 			WriteFile.readFromCSVFile();
 		}
+		public void writeInJsonFile()
+		{
+			WriteFile.WriteContactsInJSONFile(userList);
+		}
+		public void readInJsonFile()
+		{
+			WriteFile.ReadContactsFromJSONFile();
+		}
 	}
 }

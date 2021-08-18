@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -7,8 +8,9 @@ namespace AddressBookProblemUpdated
 {
     class WriteFile
     {
-        public static string path = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\AddessBookData.txt";
-        public static string pathCsv = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\AddressBookData.csv";
+        public static string path = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\DataFiles\AddessBookData.txt";
+        public static string pathCsv = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\DataFiles\AddressBookData.csv";
+        public static string pathJson = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\DataFiles\AddressBookData.json";
         public static void WriteUsingStreamWriter(List<Contacts> data)
         {
 
@@ -93,6 +95,39 @@ namespace AddressBookProblemUpdated
             else
             {
                 Console.WriteLine("File not avilable..");
+            }
+        }
+
+        public static void WriteContactsInJSONFile(List<Contacts> contacts)
+        {
+            if (File.Exists(pathJson))
+            {
+                JsonSerializer jsonSerializer = new JsonSerializer();
+                using (StreamWriter streamWriter = new StreamWriter(pathJson))
+                using (JsonWriter writer = new JsonTextWriter(streamWriter))
+                {
+                    jsonSerializer.Serialize(writer, contacts);
+                }
+                Console.WriteLine("Contact stored in Json File...");
+            }
+            else
+            {
+                Console.WriteLine("File not found...");
+            }
+        }
+        public static void ReadContactsFromJSONFile()
+        {
+            if (File.Exists(pathJson))
+            {
+                IList<Contacts> contactsRead = JsonConvert.DeserializeObject<IList<Contacts>>(File.ReadAllText(pathJson));
+                foreach (Contacts contact in contactsRead)
+                {
+                    contact.print();
+                }
+            }
+            else
+            {
+                Console.WriteLine("File not found...");
             }
         }
     }
