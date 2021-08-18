@@ -7,7 +7,7 @@ namespace AddressBookProblemUpdated
 {
     class AddressBook
     {
-		public List<Contacts> userList;
+		public List<Contacts> userList;	
 		public AddressBook()
 		{
 			this.userList = new List<Contacts>();
@@ -212,6 +212,15 @@ namespace AddressBookProblemUpdated
 		public void readFromTxtFile()
 		{
 			WriteFile.readFile();
+		}
+		public void writeInCsvFile()
+		{
+			WriteFile.csvFileWriter(userList);
+		}
+
+		public void readFromCsvFile()
+		{
+			WriteFile.readFromCSVFile();
 		}
 	}
 }
