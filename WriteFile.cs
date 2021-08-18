@@ -8,6 +8,7 @@ namespace AddressBookProblemUpdated
     class WriteFile
     {
         public static string path = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\AddessBookData.txt";
+        public static string pathCsv = @"D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\AddressBookData.csv";
         public static void WriteUsingStreamWriter(List<Contacts> data)
         {
 
@@ -40,6 +41,52 @@ namespace AddressBookProblemUpdated
                     while ((data = streamReader.ReadLine()) != null)
                     {
                         Console.WriteLine(data);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("File not avilable..");
+            }
+        }
+
+        public static void csvFileWriter(List<Contacts> data)
+        {
+
+            if (File.Exists(pathCsv))
+            {
+                File.WriteAllText(pathCsv, String.Empty);
+                using (StreamWriter streamWriter = File.AppendText(pathCsv))
+                {
+                    streamWriter.WriteLine("FirstName,LastName,Address,City,State,Zip,Contact,Email");
+                    foreach (Contacts contacts in data)
+                    {
+                        streamWriter.WriteLine(contacts.firstName + "," + contacts.lastName + "," + contacts.address + "," + contacts.city + "," + contacts.state + "," + contacts.zipCode + "," + contacts.phoneNumber + "," + contacts.eMail);
+                    }
+                    streamWriter.Close();
+                    Console.WriteLine("Contacts Stored in Csv_File.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("File not avilable..");
+            }
+        }
+        public static void readFromCSVFile()
+        {
+            if (File.Exists(pathCsv))
+            {
+                using (StreamReader streamReader = File.OpenText(pathCsv))
+                {
+                    string data = "";
+                    while ((data = streamReader.ReadLine()) != null)
+                    {
+                        string[] csv = data.Split(",");
+                        foreach (string dataCsv in csv)
+                        {
+                            Console.Write(dataCsv + " ");
+                        }
+                        Console.WriteLine();
                     }
                 }
             }
