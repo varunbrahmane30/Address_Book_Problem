@@ -6,10 +6,10 @@ namespace AddressBookProblemUpdated
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
+            Console.WriteLine("Welcome to Address Book.");
             AddressBook.addAddressBook();
             AddressBook.PersonSearch();
+            AddressBook.AddressBookSorting();
             //Console.WriteLine("\n");
             //AddressBook.ContactsDisplay();
             //Console.WriteLine("\n");
@@ -21,6 +21,7 @@ namespace AddressBookProblemUpdated
             //AddressBook.ContactsDisplay();
             //AddressBook.ContactsDisplay();
             //AddressBook.ContactsDisplay();
+
         }
     }
 }
