@@ -1,0 +1,16 @@
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.exe
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.deps.json
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.runtimeconfig.json
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.runtimeconfig.dev.json
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.dll
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\AddressBookProblemUpdated.pdb
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.csproj.AssemblyReference.cache
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.AssemblyInfoInputs.cache
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.AssemblyInfo.cs
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.csproj.CoreCompileInputs.cache
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.dll
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.pdb
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.genruntimeconfig.cache
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\microsoft.identitymodel.dll
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\obj\Debug\netcoreapp3.1\AddressBookProblemUpdated.csproj.CopyComplete
+D:\Brigelabz\PracticProblem\AddressBookProblemUpdated\AddressBookProblemUpdated\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
